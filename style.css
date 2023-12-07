@@ -73,3 +73,37 @@ body {
   grid-column: col2-start;
   grid-row: row2-start;
 }
+/*The repeat keyword*/
+.boxEight {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, [col] 100px);
+  grid-template-rows: repeat(3, [row] auto);
+}
+.box8 {
+  background-color: darkseagreen;
+  border-radius: 7px;
+  padding: 20px;
+  font-size: 150%;
+}
+.A8 {
+  grid-column: col / span 2;
+  grid-row: row;
+}
+.B8 {
+  grid-column: col 3 / span 2;
+  grid-row: row;
+}
+.C8 {
+  grid-column: col;
+  grid-row: row 2;
+}
+.D8 {
+  grid-column: col 2 / span 3;
+  grid-row: row 2;
+}
+.E8 {
+  grid-column: col / span 4;
+  grid-row: row 3;
+}
+/* End */
